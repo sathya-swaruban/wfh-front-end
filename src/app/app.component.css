@@ -7,16 +7,24 @@ div {
     transform: translate(-50%, -50%);
     background-color: lightgrey;
 }
+
 table {
     padding: 30px;
     border-spacing: 5px;
 }
-label, input, button, h2 {
+
+label,
+input,
+button,
+h2 {
     font-family: 'JetBrains Mono', sans-serif;
 }
-label, input {
+
+label,
+input {
     font-size: 16px;
 }
+
 button {
     font-size: 18px;
 }

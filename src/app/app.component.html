@@ -1,39 +1,40 @@
 <div class="main">
-  <form #wfhRequestForm = "ngForm" (ngSubmit) = "onClickSubmit(wfhRequestForm)" >
-    <table>
-      <tr>
-        <td colspan="2" style="text-align: center">
-          <h2>{{title}}</h2>
-        </td>
-      </tr>
-      <tr>
-        <td> <label for="fromDate">From Date</label> </td>
-        <td> <label for="toDate">To Date</label> </td>
-      </tr>
-      <tr>
-        <td> <input type="date" ngModel name="fromDate" id="fromDate" value="{{currentDate}}" required/> </td>
-        <td> <input type="date" ngModel name="toDate" id="toDate" value="{{currentDate}}" required/> </td>
-      </tr>
-      <tr>
-        <td> <label for="fromTime">From Time</label> </td>
-        <td> <label for="toTime">To Time</label> </td>
-      </tr>
-      <tr>
-        <td> <input type="time" ngModel name="fromTime" id="fromTime" value="{{defaultFromTime}}" required/> </td>
-        <td> <input type="time" ngModel name="toTime" id="toTime" value="{{defaultToTime}}" required/> </td>
-      </tr>
-      <tr>
-        <td>
-          <label>&nbsp;</label>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2" style="text-align: center;">
-          <button id="submitButton" type="submit"> Submit </button>
-        </td>
-      </tr>
-    </table>
-  </form>
+    <form #wfhRequestForm="ngForm" (ngSubmit)="onClickSubmit(wfhRequestForm)">
+        <table>
+            <tr>
+                <td colspan="2" style="text-align: center">
+                    <h2>{{title}}</h2>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="fromDate">From Date</label> </td>
+                <td> <label for="toDate">To Date</label> </td>
+            </tr>
+            <tr>
+                <td> <input type="date" ngModel name="fromDate" id="fromDate" value="{{currentDate}}" required /> </td>
+                <td> <input type="date" ngModel name="toDate" id="toDate" value="{{currentDate}}" required /> </td>
+            </tr>
+            <tr>
+                <td> <label for="fromTime">From Time</label> </td>
+                <td> <label for="toTime">To Time</label> </td>
+            </tr>
+            <tr>
+                <td> <input type="time" ngModel name="fromTime" id="fromTime" value="{{defaultFromTime}}" required />
+                </td>
+                <td> <input type="time" ngModel name="toTime" id="toTime" value="{{defaultToTime}}" required /> </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>&nbsp;</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button id="submitButton" type="submit"> Submit </button>
+                </td>
+            </tr>
+        </table>
+    </form>
 </div>
 
 <router-outlet></router-outlet>
