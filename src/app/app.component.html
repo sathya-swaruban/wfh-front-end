@@ -19,8 +19,8 @@
         <td> <label for="toTime">To Time</label> </td>
       </tr>
       <tr>
-        <td> <input type="time" ngModel name="fromTime" id="fromTime" value="08:00" required/> </td>
-        <td> <input type="time" ngModel name="toTime" id="toTime" value="17:15" required/> </td>
+        <td> <input type="time" ngModel name="fromTime" id="fromTime" value="{{defaultFromTime}}" required/> </td>
+        <td> <input type="time" ngModel name="toTime" id="toTime" value="{{defaultToTime}}" required/> </td>
       </tr>
       <tr>
         <td>
@@ -35,3 +35,5 @@
     </table>
   </form>
 </div>
+
+<router-outlet></router-outlet>

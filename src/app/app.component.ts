@@ -11,8 +11,8 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   public title: string = 'Work from Home';
-  // public defaultFromTime: string = '08:00';
-  // public defaultToTime: string = '17:15';
+  public defaultFromTime: string = '08:00';
+  public defaultToTime: string = '17:15';
   public currentDate: string = 'yyyy-MM-dd';
 
   constructor(private wfhService: WfhService) {}
